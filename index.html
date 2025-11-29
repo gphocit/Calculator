@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+
+      <div class="gp">
+        <h4>Developed by GP</h4>
+      </div>
+      <div class = "screen">
+        <input id = "screen" type="text" readonly/>
+      </div>
+      
+      <div class="keys">
+        <button>%</button>
+        <button>√</button>
+        <button>()</button>
+        <button onclick="DEL()">DEL</button>
+
+        <button onclick="saveValue(7)" class="key">7</button>
+        <button onclick="saveValue(8)" class="key">8</button>
+        <button onclick="saveValue(9)" class="key">9</button>
+        <button onclick="saveValue('÷')" class="key op">÷</button>
+
+        <button onclick="saveValue(4)" class="key">4</button>
+        <button onclick="saveValue(5)" class="key">5</button>
+        <button onclick="saveValue(6)" class="key">6</button>
+        <button onclick="saveValue('×')" class="key op">×</button>
+
+        <button onclick="saveValue(1)" class="key">1</button>
+        <button onclick="saveValue(2)" class="key">2</button>
+        <button onclick="saveValue(3)" class="key">3</button>
+        <button onclick="saveValue('-')"class="key op">-</button>
+
+        <button onclick="saveValue(0)" class="key">0</button>
+        <button onclick="saveValue('.')">.</button>
+        <button onclick="AC()">AC</button>
+        <button onclick="saveValue('+')" class="key op">+</button>
+
+        <button onclick="calculate()" class="key op">=</button>
+      </div>
+
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
